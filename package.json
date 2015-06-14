@@ -1,0 +1,28 @@
+{
+  "name": "forof",
+  "description": "Work with iterators from ES5 / ES3 syntax",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zloirock/forof.git"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-cli": "0.1.x",
+    "grunt-karma": "0.11.x",
+    "karma": "0.12.x",
+    "karma-qunit": "0.1.x",
+    "karma-phantomjs-launcher": "0.2.x",
+    "eslint": "^0.22.1",
+    "core-js": "^0.9.17"
+  },
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npm run lint && grunt karma:continuous"
+  },
+  "license": "MIT",
+  "keywords": [
+    
+  ]
+}
