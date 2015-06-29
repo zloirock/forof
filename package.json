@@ -14,8 +14,8 @@
     "karma": "0.12.x",
     "karma-qunit": "0.1.x",
     "karma-phantomjs-launcher": "0.2.x",
-    "eslint": "^0.22.1",
-    "core-js": "^0.9.17"
+    "eslint": "0.24.x",
+    "core-js": "^0.9.18"
   },
   "scripts": {
     "lint": "eslint index.js",
@@ -23,6 +23,8 @@
   },
   "license": "MIT",
   "keywords": [
-    
+    "forof",
+    "comprehensions",
+    "iterators"
   ]
 }
