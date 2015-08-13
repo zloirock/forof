@@ -7,7 +7,7 @@
 !function(undefined){
   'use strict';
 
-  var global      = typeof self != 'undefined' ? self : Function('return this')()
+  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')()
     , toString    = {}.toString
     , SHARED      = '__core-js_shared__'
     , FF_ITERATOR = '@@iterator';
