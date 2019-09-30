@@ -1,6 +1,8 @@
 # forof
 Work with iterators from ES5 / ES3 syntax. Equals of `for-of` loop and array / generator comprehensions. Extracted from [core-js](https://github.com/zloirock/core-js). Does not contains polyfills of collections and standard iterators, if you need it - use `core-js`.
 
+**Deprecated in favor of usage iterator helpers proposal [implemented in `core-js`](https://github.com/zloirock/core-js#iterator-helpers).**
+
 [development version](https://raw.githack.com/zloirock/forof/master/index.js), [production version](https://raw.githack.com/zloirock/forof/master/forof.min.js)
 
 [![NPM](https://nodei.co/npm/forof.png?downloads=true)](https://www.npmjs.org/package/forof/) [![Build Status](https://travis-ci.org/zloirock/forof.png)](https://travis-ci.org/zloirock/forof)
