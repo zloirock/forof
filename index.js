@@ -7,14 +7,14 @@
 !function(undefined){
   'use strict';
 
-  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')()
-    , toString    = {}.toString
-    , SHARED      = '__core-js_shared__'
-    , FF_ITERATOR = '@@iterator';
+  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+  var toString    = {}.toString;
+  var SHARED      = '__core-js_shared__';
+  var FF_ITERATOR = '@@iterator';
 
   function getSymbolIterator(){
-    var shared = global[SHARED]
-      , wks    = shared && shared.wks;
+    var shared = global[SHARED];
+    var wks    = shared && shared.wks;
     return global.Symbol && Symbol.iterator || wks && wks.iterator || FF_ITERATOR;
   }
 
@@ -53,9 +53,9 @@
   }
 
   function forOf(iterable, entries, fn, that){
-    var iterator = getIterator(iterable)
-      , f        = ctx(fn, that, entries ? 2 : 1)
-      , step;
+    var iterator = getIterator(iterable);
+    var f        = ctx(fn, that, entries ? 2 : 1);
+    var step;
     while(!(step = iterator.next()).done){
       if(call(iterator, f, step.value, entries) === false)return close(iterator);
     }
